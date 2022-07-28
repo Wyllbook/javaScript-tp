@@ -7,6 +7,7 @@
   padding: 5px;
   font-family: "font-1", Arial;
   box-sizing: border-box;
+  cursor: none;
 }
 li {
   list-style: none;
@@ -16,6 +17,8 @@ a:visited {
   color: white;
   text-decoration: none;
   transition: 0.3s;
+  z-index: 1000;
+  position: relative;
 }
 a:hover {
   font-size: 1.3rem;
@@ -141,30 +144,27 @@ footer img {
     align-items: center;
   }
 }
+.mouse {
+  position: absolute;
+  border-radius: 1500px;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+#mouse1 {
+  height: 200px;
+  width: 200px;
 
-.big-circle {
-  height: 90px;
-  width: 90px;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.393);
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: rgb(41, 41, 41);
+  transition: 0.2s ease-out;
 }
-.medium-circle {
-  background: rgba(245, 245, 245, 0.745);
-  height: 60px;
-  width: 60px;
-  position: relative;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#mouse2 {
+  background: whitesmoke;
+  height: 100px;
+  width: 100px;
+  transition: 0.1s ease-out;
 }
-cursor {
+#cursor {
   background: #2128bd;
-  border-radius: 50px;
-  position: absolute;
-  transform: translateX(-300%);
+  width: 14px;
+  height: 14px;
 }
