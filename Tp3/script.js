@@ -24,9 +24,6 @@ window.addEventListener("scroll", () => {
     if (scrollValue >= 0.85) {
       popup.style.transform = "none";
       popup.style.opacity = 1;
-    } else {
-      popup.style.transform = "translateX(400px)";
-      popup.style.opacity = 0;
     }
     closeBtn.addEventListener("click", () => {
       popup.style.transform = "translateX(400px)";
