@@ -34,7 +34,7 @@ const bookingCalc = () => {
     new Date(end_date.value) - new Date(start_date.value) //=> valeur en timestamp(millisecondes)
   ); // Math.abs permet de calculer la valeur absolue
   let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); //=> convertir les millisecondes en  seconde , en minute , en heure puis en jour en jour
-  totalPerNight.textContent = diffDays * nightPrice.textContent; //=> variable pour calculer le prix par nuit en fonction de diffDays
+  total.textContent = diffDays * nightPrice.textContent; //=> variable pour calculer le prix par nuit en fonction de diffDays
 };
 
 //Créer un addEventListener pour que lorsqu'il y a un changement dans l'input la fonction bookingCalc se joue
